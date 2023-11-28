@@ -1,0 +1,79 @@
+:root { 
+    height: 100%;
+    box-sizing: border-box;
+  }
+  body {
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    box-sizing: inherit;
+  }
+  footer {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    }
+    
+    /* Define styles for the footer container */
+    .footerContainer {
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+
+.footerBox{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.footerBottom{
+font-size: 10px;
+}
+
+.footerSocialImg {
+    height: 4vh;
+    width: auto;
+
+}
+
+  .social-link {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .socialInfo {
+    position: absolute;
+    top: -15%;
+    left: 120%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none; /* Hide the number by default */
+  }
+  
+  .social-link:hover .socialInfo {
+    display: block; /* Show the number when hovering over the link */
+  }
+  
+@media screen and (max-width: 430px) {
+  .footerBox{
+    gap: 1.5rem;
+  }
+  .socialInfo{
+    top: -30%;
+    left: 120%;
+  }
+  
+}

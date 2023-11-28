@@ -1,0 +1,64 @@
+#contact {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contactHeading{
+    font-size: 2rem;
+    font-style: 600;
+    padding-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+.contactBlock{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 100%;
+
+}
+
+.contactItem{
+    display: flex;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+    color: white;
+    font-size:16px ;
+
+}
+
+#contactBtn{
+    margin: 1rem;
+    padding: 0.5rem 5rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+    color: white;
+}
+
+#contactName,#contactMail {
+    padding: 1rem 2rem;
+}
+
+#contactMsg {
+    padding: 2rem 2rem;
+    /* resize: none; Prevent resizing of the textarea */
+    white-space: pre-line;
+    overflow-wrap: break-word; 
+    text-wrap:wrap;
+}
+
+textarea{
+    resize: none;
+}

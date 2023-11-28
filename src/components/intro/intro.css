@@ -1,0 +1,203 @@
+#intro {
+    height: calc(100vh - 10rem);
+    width: 100vw;
+    max-width: 70rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.introBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 5rem;
+}
+
+.introContent {
+    margin-top: 10rem;
+    max-height: 30rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.introContent.alpha {
+    width: 30rem;
+}
+
+
+.bg {
+    height: 40vh;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+
+.introName {
+    color: yellow;
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 300;
+
+}
+
+.typeWritter .firstText {
+    white-space: nowrap;
+    color: aqua;
+    overflow: hidden;
+    border-right: 2px solid transparent;
+    animation: typing 3s steps(20) infinite, blink-caret 0.7s infinite;
+}
+
+.btn {
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+.btnImg {
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    #intro {
+        height: calc(100vh - 1rem);
+        width: 100vw;
+        max-width: 70rem;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .introBox {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .introContent {
+        margin: 0;
+        margin-top: 0rem;
+        max-height: fit-content;
+        width: fit-content;
+        font-size: 2rem;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .introContent.alpha {
+        width: auto;
+    }
+    
+    .bg {
+        height: 30vh;
+        border: 2px solid aqua;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+/* 
+.bg {
+    position: absolute;
+    top: 15rem;
+    right: 10rem;
+    z-index: -1 ;
+    object-fit: cover;
+    height: 40vh;
+    border: 2px solid aqua;
+    border-radius: 50%;
+}
+
+.introContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+
+.introName {
+    color: yellow;
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 300;
+
+}
+
+
+.typeWritter .firstText {
+    white-space: nowrap;
+    color: aqua;
+    overflow: hidden;
+    border-right: 2px solid transparent;
+    animation: typing 3s steps(20) infinite, blink-caret 0.7s infinite;
+}
+
+
+.btn {
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+.btnImg {
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+}
+
+@media screen and (max-width:840px) {
+    .bg {
+        border: 5px solid red;
+        right: -10vw;
+    }
+    .introContent{
+        font-size: 10vw;
+    }
+    .hello {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .bg {
+        border: 5px solid pink;
+    }
+
+} */

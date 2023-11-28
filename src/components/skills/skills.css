@@ -1,0 +1,164 @@
+#skills {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.skillTitle {
+    font-size: 2rem;
+    font-style: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.skillBar{
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+}
+
+.skillBars{
+
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+
+}
+
+
+
+.skillBarImg{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}
+
+.skillBarText>p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+@media screen and (max-width:920px){
+
+    .skillBarText>p {
+        font-size: 2vh;
+    }
+}
+@media screen and (max-width:480px){
+
+    .skillBarText>p {
+        font-size: 3vh;
+    }
+    .skillBarImg{
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+    .skillBarText>h2 {
+        font-size: 5vw;
+    }
+    
+}
+.skillBox2 {
+    display: grid;
+    grid-template-columns: 1fr; /* Adjust the number of columns as needed */
+    grid-gap: 10px; 
+    width: 40rem;
+    height: auto;
+    background-color: aqua;
+    border-radius: 10px;
+    opacity: 0.95;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.skillBox{
+    display: grid;
+    grid-template-columns: 1fr; /* Adjust the number of columns as needed */
+    grid-gap: 10px; 
+    width: 40rem;
+    height: auto;
+    background-color: aqua;
+    border-radius: 10px;
+    opacity: 0.95;
+    justify-content: center;
+    border-radius: 10px;
+    visibility: visible;
+}
+
+
+@media screen and (max-width: 650px) {
+    .skillBox{
+        width: 20rem;
+        height: auto;
+        background-color: rgb(86, 39, 181);
+    }
+}
+
+
+.skillBoxClose {
+      justify-self: end;
+      align-self: start;
+      padding: 5px;
+      background-color: white;
+      opacity: 0.5;
+}
+
+.skillBoxItem {
+     color: black;
+     padding-top: 10px;
+     padding-left: 10px;
+     font-size: 28px;
+}
+.sb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    align-items: flex-start;
+}
+.si {
+    border: 2px soild #000000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.progress-bar {
+    height: 10px;
+    background-color: #ccc;
+    margin-bottom: 15px;
+    text-align: left;
+    justify-content: left;
+}
+
+/* Language bars */
+#js + .progress-bar { background-color: #ff036c ; width: 80% }
+#c + .progress-bar { background-color: #3498db; width: 60% }
+#python + .progress-bar { background-color: #2ecc71; width: 50% }
+#cpp + .progress-bar { background-color: #e74c3c; width: 70%}
+
+
+/* Web Development bars */
+
+#html + .progress-bar { background-color: #ff036c ; width: 80% }
+#css + .progress-bar { background-color: #3498db; width: 80% }
+#react + .progress-bar { background-color: #e74c3c; width: 70%}
+#node + .progress-bar { background-color: #cc702e; width: 50% } 
+#express + .progress-bar { background-color: #ff036c ; width: 40% }
+#mongo + .progress-bar { background-color: #3498db; width: 50% }
+#bootstrap + .progress-bar { background-color: #e74c3c; width: 60%}
+#tailwind + .progress-bar { background-color: #2ecc71; width: 40% }
+
+/* Tool bars */
+#vs + .progress-bar { background-color: #ff036c ; width: 80% }
+#git + .progress-bar { background-color: #3498db; width: 60% }
+#googleCloud + .progress-bar { background-color: #2ecc71; width: 40% }
+#linux + .progress-bar { background-color: #e74c3c; width: 70%}
